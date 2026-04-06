@@ -40,8 +40,69 @@
         </figure>
     </aside>
   </main>
+        <table>
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>edad</th>
+                    <th>aguanta</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>sara</td>
+                    <td>21</td>
+                    <td>si</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>total malignas</td>
+                <td colspan="2">1</td>
+            </tfoot>
+        </table>
+
+        <form action="/enviar" method="post">
+
+            <fieldset>
+
+                <legend>¿si o no? marino</legend>
+
+
+                <label for="nombre">nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">¿que edad tienes?</label>
+                <input type="number" id="edad" name="edad" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>¿aguantas?</legend>
+
+                <label for="si">si</label>
+                <input type="radio" id="si" name="aguanta"  value="si">
+
+                <label for="no">no</label>
+                <input type="radio" id="no" name="aguanta" value="no">
+
+
+            </fieldset>
+            <button type="submit">enviar</button>
+
+        </form>
+
+
+    
+
+
+
+
   <footer>
     <p>© aprendices del sena 100pre</p>
   </footer>
+
+
+
 </body>
 </html>
